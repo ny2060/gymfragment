@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="최희선"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="userid@gmail.com"
+        android:textSize="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:columnCount="4"
+            android:rowCount="3"
+            android:useDefaultMargins="false"
+            android:layout_alignParentLeft="true">
+
+            <ImageButton
+                android:id="@+id/btn_commufav"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/googleg_disabled_color_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text="글 관심목록"
+                android:textSize="13dp" />
+
+            <ImageButton
+                android:id="@+id/btn_classfav"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="top"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/googleg_disabled_color_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:text="강좌 관심목록"
+                android:textSize="13dp" />
+
+            <ImageButton
+                android:id="@+id/btn_mypost"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/googleg_disabled_color_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:text="나의 글"
+                android:textSize="13dp" />
+
+            <ImageButton
+                android:id="@+id/btn_mycomment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/googleg_disabled_color_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:text="나의 댓글"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:text="내정보"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:text="로그아웃"
+                android:textSize="15dp" />
+
+
+        </GridLayout>
+
+    </LinearLayout>
+</LinearLayout>
